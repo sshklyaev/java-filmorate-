@@ -85,7 +85,7 @@ public class UserControllerTest {
         assertEquals(0, userController.getUsers().size(), "Список пользователей должен быть пустым");
     }
 
-    
+
     @Test
     public void shouldNoAddUserWhenUserLoginIsContainsSpaces() {
         user.setLogin("Willixz");
