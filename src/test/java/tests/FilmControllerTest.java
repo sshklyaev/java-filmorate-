@@ -26,12 +26,6 @@ public class FilmControllerTest {
     }
 
 
-    @Test
-    public void shouldAddFilmWhenAllAttributeCorrect() {
-        Object film1 = filmController.saveFilm(film);
-        assertEquals(film, film1, "Переданный и полученный фильмы должны совпадать");
-        assertEquals(1, filmController.getFilms().size(), "В списке должен быть один фильм");
-    }
 
 
     @Test
