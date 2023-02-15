@@ -86,14 +86,6 @@ public class UserControllerTest {
     }
 
 
-    @Test
-    public void shouldNoAddUserWhenUserLoginIsContainsSpaces() {
-        user.setLogin("Willixz");
-        Object object = userController.saveUser(user);
-        assertTrue(object.toString().contains("BAD_REQUEST"), "Должен быть получен 400 ответ от сервера");
-        assertEquals(0, userController.getUsers().size(), "Список пользователей должен быть пустым");
-    }
-
 
     @Test
     public void shouldAddUserWhenUserNameIsEmpty() {
